@@ -24,7 +24,7 @@ export default function Hero({}: Props) {
 				src="https://pbs.twimg.com/profile_images/378800000166471388/dcaf75c494ce6bfe20603ebcc144eca7_400x400.jpeg"
 				alt=" "
 			/>
-			<div>
+			<div className="z-20">
 				<h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
 					Software Engeineer
 				</h2>
