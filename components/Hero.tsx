@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -19,7 +20,7 @@ export default function Hero({}: Props) {
 	return (
 		<div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
 			<BackgroundCircles />
-			<img
+			<motion.img
 				className="relative rounded-full h-32 w-32 mx-auto object-cover"
 				src="https://pbs.twimg.com/profile_images/378800000166471388/dcaf75c494ce6bfe20603ebcc144eca7_400x400.jpeg"
 				alt=" "
@@ -37,8 +38,8 @@ export default function Hero({}: Props) {
 					<Link href="#about">
 						<button className="heroButton">About</button>
 					</Link>
-					<Link href="#experiance">
-						<button className="heroButton">Experiance</button>
+					<Link href="#experience">
+						<button className="heroButton">Experience</button>
 					</Link>
 					<Link href="#skills">
 						<button className="heroButton">Skills</button>
