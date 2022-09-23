@@ -30,7 +30,7 @@ export default function About({}: Props) {
 					</span>{" "}
 					background
 				</h4>
-				<p className="text-lg">
+				<p className="text-sm">
 					I'm Francis! I've been coding for 2 years. As a Full Stack
 					Developer I've worked with three programming stacks -
 					Python, Java, and MERN. I continue to build my knowledge in
