@@ -1215,6 +1215,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@heroicons/react@^2.0.11":
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-2.0.11.tgz#2c6cf4c66d81142ec87c102502407d8c353558bb"
+  integrity sha512-bASjOgSSaYj8HqXWsOqaBiB6ZLalE/g90WYGgZ5lPm4KCCG7wPXntY4kzHf5NrLh6UBAcnPwvbiw1Ne9GYfJtw==
+
 "@humanwhocodes/config-array@^0.10.4":
   version "0.10.4"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.10.4.tgz#01e7366e57d2ad104feea63e72248f22015c520c"
@@ -7348,6 +7353,11 @@ react-error-overlay@^6.0.11:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.11.tgz#92835de5841c5cf08ba00ddd2d677b6d17ff9adb"
   integrity sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==
 
+react-hook-form@^7.36.1:
+  version "7.36.1"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.36.1.tgz#82a311fe8cbe75e689fd4529f083b7c983da6520"
+  integrity sha512-EbYYkCG2p8ywe7ikOH2l02lAFMrrrslZi1I8fqd8ifDGNAkhomHZQzQsP6ksvzrWBKntRe8b5L5L7Zsd+Gm02Q==
+
 react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -8237,6 +8247,11 @@ symbol-tree@^3.2.4:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
+
+tailwind-scrollbar@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/tailwind-scrollbar/-/tailwind-scrollbar-2.0.1.tgz#f08721173d513f1406a44601640b79726e3f9728"
+  integrity sha512-OcR7qHBbux4k+k6bWqnEQFYFooLK/F4dhkBz6nvswIoaA9ancZ5h20e0tyV7ifSWLDCUBtpG+1NHRA8HMRH/wg==
 
 tailwindcss@^3.0.2, tailwindcss@^3.1.8:
   version "3.1.8"
