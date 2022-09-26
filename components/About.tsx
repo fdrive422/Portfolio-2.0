@@ -1,10 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { motion } from "framer-motion";
+import { PageInfo } from "../typings";
+import { urlFor } from "../sanity";
 
-type Props = {};
+type Props = {
+	pageInfo: PageInfo;
+};
 
-export default function About({}: Props) {
+export default function About({ pageInfo }: Props) {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -19,8 +23,8 @@ export default function About({}: Props) {
 				transition={{ duration: 1.2 }}
 				whileInView={{ opacity: 1, x: 0 }}
 				viewport={{ once: true }}
-				src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.18169-9/20597483_10209619726306051_3406035872081272498_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=8MTuOwoYYRYAX-hqALc&_nc_ht=scontent-lax3-1.xx&oh=00_AT8I6osXjhqoXCvfIJz9t3_odbTxOpffTOxNcKH-QDQW_Q&oe=63500720"
-				className="mb-20 md:md-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
+				src={urlFor(pageInfo?.profilePic).url()}
+				className="mb-5 md:md-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
 			/>
 			<div className="space-y-10 px-0 md:px-10">
 				<h4 className="text-4xl font-semibold">
@@ -30,15 +34,7 @@ export default function About({}: Props) {
 					</span>{" "}
 					background
 				</h4>
-				<p className="text-sm">
-					I'm Francis! I've been coding for 2 years. As a Full Stack
-					Developer I've worked with three programming stacks -
-					Python, Java, and MERN. I continue to build my knowledge in
-					programming while discovering new techniques and solutions
-					with each project I create. The process is rewarding and the
-					journey motivating. I enjoy collaborating with others and
-					contribute my skills and experience whenever I can.
-				</p>
+				<p className="text-sm">{pageInfo?.backgroundInformation}</p>
 			</div>
 		</motion.div>
 	);
