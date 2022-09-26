@@ -63,7 +63,8 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
 					<div className="flex items-center justify-center">
 						<img
 							className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-							src="https://pbs.twimg.com/profile_images/378800000166471388/dcaf75c494ce6bfe20603ebcc144eca7_400x400.jpeg"
+							src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F000%2F378%2F951%2Foriginal%2Fhome-vector-icon.jpg&f=1&nofb=1&ipt=6c18806fe7ecd66395e701b4f17a694d4798c93b23a1cc26c10ef3f051eda871&ipo=images"
+							// "https://pbs.twimg.com/profile_images/378800000166471388/dcaf75c494ce6bfe20603ebcc144eca7_400x400.jpeg"
 							alt=""
 						/>
 					</div>
