@@ -1,3 +1,10 @@
+Digital Portfolio-2.0
+
+### <a href="https://portfolio-2-0-phi.vercel.app/#hero">LIVE DEMO</a>
+
+-![Screen Shot 2022-09-26 at 22 22 32 PM](https://user-images.githubusercontent.com/72363705/192439379-e4457c49-83f3-41dc-a753-cbb6d5a54ccd.png)
+------
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
