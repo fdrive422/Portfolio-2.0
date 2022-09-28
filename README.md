@@ -1,13 +1,15 @@
 Digital Portfolio-2.0
 
-### <a href="https://portfolio-2-0-phi.vercel.app/#hero">LIVE DEMO</a>
+### <a href="https://portfolio-2-0-fdrive422.vercel.app/#hero">LIVE DEMO</a>
+
 ![Screen Shot 2022-09-26 at 22 22 32 PM](https://user-images.githubusercontent.com/72363705/192440095-1c7a2ab9-14a1-4683-a7e3-9f33f84bc240.png)
 
 ![Screen Shot 2022-09-26 at 22 28 40 PM](https://user-images.githubusercontent.com/72363705/192440116-e61c23b1-2fab-4ad9-85e2-f84cc9207737.png)
 
 ![Screen Shot 2022-09-26 at 22 28 52 PM](https://user-images.githubusercontent.com/72363705/192440169-1596b6d5-e7cb-4872-89a6-3d3296c7d8c3.png)
 
------------
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -32,8 +34,8 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+-   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
