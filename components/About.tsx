@@ -34,7 +34,7 @@ export default function About({ pageInfo }: Props) {
 					</span>{" "}
 					background
 				</h4>
-				<p className="text-md">{pageInfo?.backgroundInformation}</p>
+				<p className="text-lg">{pageInfo?.backgroundInformation}</p>
 			</div>
 		</motion.div>
 	);
