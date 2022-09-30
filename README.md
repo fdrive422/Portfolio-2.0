@@ -1,7 +1,8 @@
 Digital Portfolio-2.0
 
 ### <a href="https://portfolio-2-0-fdrive422.vercel.app/#hero">LIVE DEMO</a>
-![Screen Shot 2022-09-30 at 15 26 13 PM](https://user-images.githubusercontent.com/72363705/193364948-bd56b52d-23d3-4168-80db-c108d4c070ed.png)
+
+![Screen Shot 2022-09-30 at 15 31 15 PM](https://user-images.githubusercontent.com/72363705/193365040-ae6be6c2-9437-4b3f-aeeb-f2a3b5e8d56b.png)
 
 ![Screen Shot 2022-09-26 at 22 28 40 PM](https://user-images.githubusercontent.com/72363705/192440116-e61c23b1-2fab-4ad9-85e2-f84cc9207737.png)
 
