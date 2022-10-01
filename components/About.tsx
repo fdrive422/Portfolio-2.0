@@ -22,7 +22,7 @@ export default function About({ pageInfo }: Props) {
 				initial={{ x: -200, opacity: 0 }}
 				transition={{ duration: 1.2 }}
 				whileInView={{ opacity: 1, x: 0 }}
-				viewport={{ once: true }}
+				viewport={{ once: false }}
 				src={urlFor(pageInfo?.profilePic).url()}
 				className="mb-5 md:md-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
 			/>

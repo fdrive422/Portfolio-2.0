@@ -24,8 +24,8 @@ function ContactMe({}: Props) {
 				Contact
 			</h3>
 			<div className="flex flex-col space-y-10">
-				<h4 className="text-4xl font-semibold text-center">
-					I can help you with your next software project.{" "}
+				<h4 className="text-3xl font-semibold text-center">
+					I can help you with your next project.{" "}
 					<span className="decoration-[#F7AB0A]/50 underline">
 						{" "}
 						Let's Talk!

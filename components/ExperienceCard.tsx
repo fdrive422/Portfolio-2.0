@@ -11,7 +11,7 @@ type Props = {
 
 export default function ExperienceCard({ experience }: Props) {
 	return (
-		<article className="flex flex-col rounded items-center space-y-7 flex-shrink-0 w-[500px] md:w[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer tranition-opacity duration-200 overflow-hidden">
+		<article className="flex flex-col rounded items-center space-y-10 flex-shrink-0 w-[500px] md:w[700px] xl:w-[1000px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer tranition-opacity duration-200 overflow-hidden">
 			<motion.img
 				initial={{
 					y: -100,
@@ -19,7 +19,7 @@ export default function ExperienceCard({ experience }: Props) {
 				}}
 				transition={{ duration: 1.2 }}
 				whileInView={{ opacity: 1, y: 0 }}
-				viewport={{ once: true }}
+				viewport={{ once: false }}
 				className="w-32 h-32 rounded-full xl:w-[180px] xl:h-[180px] object-cover object-center"
 				src={urlFor(experience?.companyImage).url()}
 				alt=""
