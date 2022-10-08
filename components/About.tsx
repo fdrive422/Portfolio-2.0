@@ -24,17 +24,19 @@ export default function About({ pageInfo }: Props) {
 				whileInView={{ opacity: 1, x: 0 }}
 				viewport={{ once: false }}
 				src={urlFor(pageInfo?.profilePic).url()}
-				className="mb-5 md:md-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
+				className="mt-20 md:mt-0 w-[125px] h-[125px] rounded-full object-cover md:rounded-lg md:w-[320px] md:h-[350px] lg:w-[500px] lg:h-[600px]"
 			/>
-			<div className="space-y-10 px-0 md:px-10">
-				<h4 className="text-4xl font-semibold">
+			<div className="mt-0 mb-5 space-y-5 md:space-y-10 px-0 md:px-10">
+				<h4 className="text-2xl md:text-4xl font-semibold">
 					Here is a{" "}
 					<span className="underline decoration-[#F7AB0A]/50">
 						little
 					</span>{" "}
 					background
 				</h4>
-				<p className="text-lg">{pageInfo?.backgroundInformation}</p>
+				<p className="text-md md:text-lg">
+					{pageInfo?.backgroundInformation}
+				</p>
 			</div>
 		</motion.div>
 	);
