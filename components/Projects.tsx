@@ -17,16 +17,16 @@ function Projects({ projects }: Props) {
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 1.5 }}
 			className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0 ">
-			<h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+			<h3 className="absolute text-lg md:text-2xl top-24 uppercase tracking-[20px] text-gray-500">
 				Projects
 			</h3>
 			<div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
 				{projects?.map((project, i) => (
 					<div
 						key={project._id}
-						className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
+						className="w-screen flex-shrink-0 snap-center flex flex-col space-y-2 md:space-y-5 items-center justify-center p-20 md:p-20 h-screen">
 						<motion.img
-							className="h-25 object-cover rounded"
+							className="mt-10 md:mt-0 h-[150px] md:h-[325px] lg:h-[450px] object-cover rounded"
 							initial={{
 								y: -200,
 								opacity: 0,
@@ -37,24 +37,27 @@ function Projects({ projects }: Props) {
 							src={urlFor(project?.image).url()}
 							alt=""
 						/>
-						<div className="space-y-10 px-0 md:px-10 max-w-6xl">
-							<h4 className="text-3xl font-semibold text-center">
-								<span className="underline decoration-[#F7AB0A]/50">
-									Case Study {i + 1} of {projects.length}:
-								</span>{" "}
-								{project?.title}
+						<div className="space-y-5 px-0 md:px-5 max-w-6xl">
+							<h4 className="text-lg md:text-3xl font-semibold text-center">
+								{/* <span className="underline decoration-[#F7AB0A]/50"> */}
+								Case Study {i + 1} of {projects.length}
+								{/* </span>{" "} */}
+								{/* {project?.title} */}
 							</h4>
 							<div className="flex items-center space-x-3 justify-center">
 								{project?.technologies.map((technology) => (
 									<img
-										className="h-10 w-10 rounded-full"
+										className="h-8 w-8 md:h-10 md:w-10 rounded-full"
 										key={technology._id}
 										src={urlFor(technology.image).url()}
 										alt=" "
 									/>
 								))}
 							</div>
-							<p className="text-lg text-center md:text-left">
+							<p className="text-md md:text-xl text-center">
+								<span className="underline decoration-[#F7AB0A]/50">
+									{project?.title}
+								</span>{" "}
 								{project?.summary}
 							</p>
 						</div>

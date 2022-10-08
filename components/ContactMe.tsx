@@ -19,12 +19,12 @@ function ContactMe({}: Props) {
 		window.location.href = `mailto:fafrago@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
 	};
 	return (
-		<div className="h-screen flex relative flex-col text-center md:text-left md:flex-rox max-w-7xl px-10 justify-evenly mx-auto items-center">
-			<h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+		<div className="h-screen flex relative flex-col text-center md:text-left md:flex-rox max-w-xl px-10 justify-evenly mx-auto items-center">
+			<h3 className="absolute top-24 uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-2xl">
 				Contact
 			</h3>
-			<div className="flex flex-col space-y-10">
-				<h4 className="text-3xl font-semibold text-center">
+			<div className="flex flex-col space-y-5 md:space-y-10">
+				<h4 className="mt-20 md:mt-0 text-md md:text-3xl font-semibold text-center">
 					I can help you with your next project.{" "}
 					<span className="decoration-[#F7AB0A]/50 underline">
 						{" "}
@@ -32,18 +32,20 @@ function ContactMe({}: Props) {
 					</span>
 				</h4>
 
-				<div className="space-y-10">
+				<div className="space-y-5 md:space-y-10">
 					<div className="flex items-center space-x-5 justify-center">
 						<PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-						<p className="text-2xl">+13104615012</p>
+						<p className="text-md md:text-2xl">+13104615012</p>
 					</div>
 					<div className="flex items-center space-x-5 justify-center">
 						<EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-						<p className="text-2xl">fafrago@gmail.com</p>
+						<p className="text-md md:text-2xl">fafrago@gmail.com</p>
 					</div>
 					<div className="flex items-center space-x-5 justify-center">
 						<MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-						<p className="text-2xl">Los Angeles, California</p>
+						<p className="text-md md:text-2xl">
+							Los Angeles, California
+						</p>
 					</div>
 				</div>
 				<form

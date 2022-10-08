@@ -11,7 +11,7 @@ type Props = {
 
 export default function ExperienceCard({ experience }: Props) {
 	return (
-		<article className="flex flex-col rounded items-center space-y-10 flex-shrink-0 w-[500px] md:w[700px] xl:w-[1000px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer tranition-opacity duration-200 overflow-hidden">
+		<article className="flex flex-col rounded items-center space-y-5 md:space-y-10 flex-shrink-0 w-[400px] md:w-[700px] xl:w-[1000px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer tranition-opacity duration-200 overflow-hidden">
 			<motion.img
 				initial={{
 					y: -100,
@@ -25,13 +25,17 @@ export default function ExperienceCard({ experience }: Props) {
 				alt=""
 			/>
 			<div className="px-0 md:px-10">
-				<h4 className="text-3xl font-light">{experience.jobTitle}</h4>
-				<p className="font-bold text-2xl mt-1">{experience.company}</p>
+				<h4 className="text-xl md:text-3xl font-light">
+					{experience.jobTitle}
+				</h4>
+				<p className="text-xl font-bold md:text-2xl mt-1">
+					{experience.company}
+				</p>
 				<div className=" flex space-x-2 my-2 items-center justify-center">
 					{experience.technologies.map((technology) => (
 						<img
 							key={technology._id}
-							className="h-10 w-10 rounded-full "
+							className="h-8 w-8 md:h-10 md:w-10 rounded-full "
 							src={urlFor(technology.image).url()}
 						/>
 					))}
@@ -43,9 +47,9 @@ export default function ExperienceCard({ experience }: Props) {
 						: new Date(experience.dateEnded).toDateString()}
 				</p>
 
-				<ul className="list-disc space-y-5 ml-5 text-md h-56 overflow-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]/80">
+				<ul className="list-disc space-y-5 ml-5 text-md h-60 overflow-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]/80">
 					{experience.points.map((point, i) => (
-						<li className="" key={i}>
+						<li className="text-sm md:text-lg m-1" key={i}>
 							{point}
 						</li>
 					))}
