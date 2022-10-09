@@ -26,7 +26,7 @@ function Projects({ projects }: Props) {
 						key={project._id}
 						className="w-screen flex-shrink-0 snap-center flex flex-col space-y-2 md:space-y-5 items-center justify-center p-20 md:p-20 h-screen">
 						<motion.img
-							className="mt-10 md:mt-0 h-[150px] md:h-[325px] lg:h-[450px] object-cover rounded"
+							className="mt-10 mb-5 md:mt-0 h-[185px] md:h-[325px] lg:h-[450px] object-cover rounded"
 							initial={{
 								y: -200,
 								opacity: 0,
@@ -39,10 +39,7 @@ function Projects({ projects }: Props) {
 						/>
 						<div className="space-y-5 px-0 md:px-5 max-w-6xl">
 							<h4 className="text-lg md:text-3xl font-semibold text-center">
-								{/* <span className="underline decoration-[#F7AB0A]/50"> */}
 								Case Study {i + 1} of {projects.length}
-								{/* </span>{" "} */}
-								{/* {project?.title} */}
 							</h4>
 							<div className="flex items-center space-x-3 justify-center">
 								{project?.technologies.map((technology) => (

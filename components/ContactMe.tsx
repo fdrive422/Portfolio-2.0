@@ -1,6 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
+import {
+	PhoneIcon,
+	MapPinIcon,
+	EnvelopeIcon,
+	ArrowDownOnSquareIcon,
+} from "@heroicons/react/24/solid";
 import { useForm, SubmitHandler } from "react-hook-form";
 
 type Inputs = {
@@ -23,13 +28,13 @@ function ContactMe({}: Props) {
 			<h3 className="absolute top-24 uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-2xl">
 				Contact
 			</h3>
-			<div className="flex flex-col space-y-5 md:space-y-10">
-				<h4 className="mt-20 md:mt-0 text-md md:text-3xl font-semibold text-center">
+			<div className="mx-autoflex flex-col space-y-5 md:space-y-10">
+				<h4 className="mt-20 md:mt-0 text-2xl md:text-3xl font-semibold text-center">
 					I can help you with your next project.{" "}
-					<span className="decoration-[#F7AB0A]/50 underline">
-						{" "}
-						Let's Talk!
-					</span>
+					{/* <span className="decoration-[#F7AB0A]/50 underline">
+						{" "} */}
+					Let's Talk!
+					{/* </span> */}
 				</h4>
 
 				<div className="space-y-5 md:space-y-10">
@@ -47,38 +52,49 @@ function ContactMe({}: Props) {
 							Los Angeles, California
 						</p>
 					</div>
+					<div className="flex items-center space-x-5 justify-center">
+						<ArrowDownOnSquareIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+						<p className="text-md md:text-2xl">
+							<a href="https://github.com/fdrive422/Portfolio/blob/main/FFragoResume-SWE-2022v2.pdf">
+								{" "}
+								<span className="underline decoration-[#F7AB0A]/50">
+									Download My Resume
+								</span>
+							</a>
+						</p>
+					</div>
 				</div>
 				<form
 					onSubmit={handleSubmit(onSubmit)}
-					className="flex flex-col space-y-2 w-fit mx-auto">
+					className="flex flex-shrink-0 flex-col space-y-2 md:w-fit mx-auto">
 					<div className="flex space-x-2">
 						<input
 							{...register("name")}
 							placeholder="Name"
-							className="contactInput"
+							className="contactInput p-3"
 							type="text"
 						/>
 						<input
 							{...register("email")}
 							placeholder="Email"
-							className="contactInput"
+							className="contactInput p-3"
 							type="email"
 						/>
 					</div>
 					<input
 						{...register("subject")}
 						placeholder="Subject"
-						className="contactInput"
+						className="contactInput p-3"
 						type="text"
 					/>
 					<textarea
 						{...register("message")}
 						placeholder="Message"
-						className="contactInput"
+						className="contactInput p-3"
 					/>
 					<button
 						type="submit"
-						className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg">
+						className="bg-[#F7AB0A] py-5 px-10 flex-shrink-0 rounded-md text-black font-bold text-lg">
 						Submit
 					</button>
 				</form>
