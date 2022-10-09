@@ -58,7 +58,7 @@ function ContactMe({}: Props) {
 							<a href="https://github.com/fdrive422/Portfolio/blob/main/FFragoResume-SWE-2022v2.pdf">
 								{" "}
 								<span className="underline decoration-[#F7AB0A]/50">
-									Download My Resume
+									Resume Download
 								</span>
 							</a>
 						</p>
