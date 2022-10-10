@@ -30,14 +30,10 @@ function ContactMe({}: Props) {
 			</h3>
 			<div className="mx-autoflex flex-col space-y-5 md:space-y-10">
 				<h4 className="mt-20 md:mt-0 text-2xl md:text-3xl font-semibold text-center">
-					I can help you with your next project.{" "}
-					{/* <span className="decoration-[#F7AB0A]/50 underline">
-						{" "} */}
-					Let's Talk!
-					{/* </span> */}
+					I can help you with your next project. Let's Talk!
 				</h4>
 
-				<div className="space-y-5 md:space-y-10">
+				<div className="space-y-4 md:space-y-10">
 					<div className="flex items-center space-x-5 justify-center">
 						<PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
 						<p className="text-md md:text-2xl">+13104615012</p>
@@ -84,13 +80,13 @@ function ContactMe({}: Props) {
 					<input
 						{...register("subject")}
 						placeholder="Subject"
-						className="contactInput p-3"
+						className="contactInput2 p-3"
 						type="text"
 					/>
 					<textarea
 						{...register("message")}
 						placeholder="Message"
-						className="contactInput p-3"
+						className="contactInput2 p-3"
 					/>
 					<button
 						type="submit"
